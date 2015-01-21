@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#da515151" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:text="Clear"
+                android:textSize="40sp"
+                android:layout_span="2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:onClick="clearInput"/>
+            <Button
+                android:text="Del"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:onClick="deleteLastCharacter"/>
+            <Button
+                android:text="/"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="/"
+                android:onClick="characterPressed"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:text="1"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="1"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="2"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="2"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="3"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="3"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="*"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="*"
+                android:onClick="characterPressed"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:text="4"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="4"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="5"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="5"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="6"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="6"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="-"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="-"
+                android:onClick="characterPressed"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:text="7"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="7"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="8"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="8"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="9"
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="9"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="+"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="+"
+                android:onClick="characterPressed"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:text="0"
+                android:textSize="40sp"
+                android:layout_span="3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:tag="0"
+                android:onClick="numberPressed"/>
+            <Button
+                android:text="="
+                android:textSize="40sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:onClick="equalsPressed"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
